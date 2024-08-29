@@ -1,0 +1,177 @@
+/* Semantica */
+
+body {
+    background-color: #e0e0e0; 
+    color: #333; 
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%; 
+    background-color: #b0bec5; 
+    border: 2px solid #90a4ae; 
+    padding: 10px;
+    box-sizing: border-box; 
+    margin-bottom: 10px; 
+}
+
+
+section{
+    margin-bottom: 30px;
+    background-color: #cfd8dc; 
+    border: 2px solid #90a4ae;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Primer punto */
+
+.Encabezado {
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 15px;
+    background-color: #cfd8dc; 
+    padding: 10px;
+    border: 2px solid #90a4ae; 
+}
+
+/* Segundo punto */
+
+.Titulo1 {
+    text-align: center;
+    border: 2px solid #90a4ae; 
+    border-radius: 15px;
+    background-color: #b0bec5; 
+    padding: 10px;
+}
+
+hr {
+    height: 2px;
+    background-color: #78909c; 
+    border: none; 
+}
+
+.Parrafo1 {
+    font-size: larger;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.Cita1 {
+    background-color: #f5f5f5; 
+    width: 550px;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    border-left: 4px solid #80deea; 
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Tercer punto */
+
+.box {
+    background-color: #90a4ae; 
+    box-shadow: 2px 5px 2px black; 
+    border: 2px solid #607d8b; 
+    border-radius: 10px; 
+    margin: 2px; 
+    padding: 5px; 
+    margin-bottom: 10px;
+}
+
+.box2 {
+    background-color: #5ea6ca;
+    border: 4px solid #31586b; 
+}
+
+/* Cuarto punto */
+
+.CajaRelativa{
+    position: relative;
+    top: 10px;
+    left: 0px;
+    background-color: #90a4ae;
+    padding: 1px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    border: 2px solid #607d8b;
+}
+
+.CajaAbsoluta{
+    position: absolute;
+    top: 40px;
+    left: 500px;
+    background-color: #5ea6ca;
+    border-radius: 10px;
+    border: 2px solid #31586b;
+    padding: 2px;
+}
+
+/* Quinto punto */
+
+@media screen and (max-width: 768px){
+
+    body{
+        background-color: #2168d3;
+    }
+    .Encabezado{
+        font-size: small;
+    }
+    .CajaRelativa{
+        margin-bottom: 160px;
+    }
+}
+
+/* Sexto punto */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.Elementos{
+    background-color: #2168d3;
+    padding: 20px;
+    width: 100;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Septimo punto */
+
+.animacion{
+    width: 100px;
+    height: 100px; 
+    background-color: red; 
+    transition: 0.4s ease-in; 
+    margin-bottom: 20px;
+}
+
+.animacion:hover{
+    cursor: pointer;
+    background-color: green;
+}
+
+.mover{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: mover 3s infinite;
+}
+
+@keyframes mover {
+    0% {
+            transform: translateX(0); 
+            }
+    50% {
+            transform: translateX(100px); 
+             }
+    100% {
+             transform: translateX(0); 
+            }
+        }
